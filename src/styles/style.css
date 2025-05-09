@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url(src/fonts/Montserrat-Medium.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-image: url(../imgs/graffiti-background-with-throwup-tagging-handdrawn-style-street-art-graffiti-urban-theme_675911-461.avif);
+    background-size: cover;
+}
+
+body {
+    font-family: 'montserrat';
+    font-size: 1.3em;
+    background-color: #5050509c;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+#topo, #foot {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #2D2D2F;
+    width: 70%;
+    height: 10%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+}
+
+#foot {
+    width: 40%;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: #3f3f3f;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.397);
+    transition-duration: 0.15s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+#meusLinks {
+    height: 70%;
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.397));
+}
+
+.item img {
+    padding: 10px;
+    height: 10%;
+}
+
+h1, h2 {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+}
+
+a {
+    text-decoration: none;
+}
+
+#quadro {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 80%;
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    background-color: rgb(12, 56, 122);
+    border-radius: 20px 0px 0px  20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+}
+
+#meio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    background-color: #c42746;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+}
+
+#fim {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+    background-color: #EFF1F0;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+}
+
+.postIt {
+    height: 30%;
+    width: 40%;
+    padding: 20px;
+    outline: none;
+    background-color: rgb(255, 228, 72);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+}
+
+.postItMeio {
+    height: 18%;
+    width: 40%;
+    padding: 20px;
+    outline: none;
+    background-color: rgb(135, 255, 135);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+}
+
+.postItFinal {
+    height: 18%;
+    width: 40%;
+    padding: 20px;
+    outline: none;
+    background-color: rgb(135, 167, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);  
+}
+
+.git {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3f3f3f;
+    width: fit-content;
+    gap: 20px;
+    transition-duration: 0.3s;
+}
+
+.git:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+}
